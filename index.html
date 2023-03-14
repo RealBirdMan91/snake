@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+  </head>
+  <body class="flex flex-col h-screen justify-center">
+    <header>
+      <h1 class="text-center text-5xl my-4">Snake Game</h1>
+      <h2 class="text-center text-2xl">
+        This was half of your childhood on car trips.
+      </h2>
+      <div class="text-center">
+        <h2>Let's play Snake!</h2>
+        <h2 id="score">Score: <span>12</span>!</h2>
+      </div>
+    </header>
+
+    <main class="centered flex-col gap-6 my-6">
+      <div id="snake-grid" class="w-[420px] aspect-square bg-slate-700"></div>
+    </main>
+
+    <footer class="flex flex-col align-middle">
+      <div class="text-center" id="messages">
+        <div>Eat the apples to grow larger!</div>
+        <div>Use your arrow keys to move.</div>
+        <button
+          id="start"
+          class="m-4 bg-pink-300 px-10 py-2 rounded-md text-slate-600"
+        >
+          start Game!
+        </button>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
